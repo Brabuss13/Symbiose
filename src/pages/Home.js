@@ -61,7 +61,7 @@ const Home = () => {
               <motion.img 
                 style={{ scale, y, opacity }} 
                 className={`home-title ${menuOpen ? "hide-logo" : ""}`}
-                src="/media/SymbioseLogo2.png"
+                src="/media/logosymbiose.png"
                 alt="illustration"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity:1, scale: 1 }}

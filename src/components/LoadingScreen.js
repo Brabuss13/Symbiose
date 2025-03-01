@@ -21,7 +21,7 @@ const LoadingScreen = ({ onFinish }) => {
             {!showText ? (
                 <div className='image-wrapper'>
                     <div className='rotating-bar'></div>
-                    <img src="../../media/symbioseLogo2.png" alt="Logo" className="loading-logo" />
+                    <img src="../../media/logosymbiose.png" alt="Logo" className="loading-logo" />
                 </div>
             ) : (
                 <>

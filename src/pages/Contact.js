@@ -5,6 +5,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     surname: '',
+    phone: '',
     email: '',
     message: '',
   });
@@ -19,9 +20,9 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const { name, surname, email, message } = formData;
+    const { name, surname, phone, email, message } = formData;
 
-    if (!name || !surname || !email || !message) {
+    if (!name || !surname || !phone || !email || !message) {
       setError('Tous les champs sont obligatoires.');
       return;
     }
@@ -29,7 +30,7 @@ const Contact = () => {
     emailjs.send(
       'service_ie5obdc', 
       'template_g8d8bc8', 
-      { name, surname, email, message },
+      { name, surname, phone, email, message },
       '0ji4y8VBCCCUH1FUW'
     )
     .then(() => {
@@ -48,6 +49,7 @@ const Contact = () => {
       <form className='form-class' onSubmit={handleSubmit}>
         <input type="text" name="name" placeholder="Nom" value={formData.name} onChange={handleChange} />
         <input type="text" name="surname" placeholder="Prénom" value={formData.surname} onChange={handleChange} />
+        <input type="tel" name="phone" placeholder="Numéro de téléphone" value={formData.phone} onChange={handleChange} />
         <input type="email" name="email" placeholder="Adresse email" value={formData.email} onChange={handleChange} />
         <textarea name="message" placeholder="Votre message" value={formData.message} onChange={handleChange} />
         <button type="submit">Envoyer</button>

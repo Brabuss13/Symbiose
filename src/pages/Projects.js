@@ -20,17 +20,26 @@ const projects = [
 const Projects = () => {
   return (
     <div className="projet-class">
-      <h1>Nos Projets</h1>
-      <ul>
-        {projects.map((project) => (
-          <li key={project.id}>
-            <img src={project.images} alt={project.title}></img>
-            <h2>{project.title}</h2>
-            <p>{project.description}</p>
-            <Link to={`/projects/${project.id}`}>Voir plus</Link>
-          </li>
-        ))}
-      </ul>
+      <div className="projet-class-box">
+        <h1>Nos Projets</h1>
+      </div>
+      <div className="projet-class-content">
+        <div className="projet-class-content-title">
+          <h1>Projets</h1>
+        </div>
+        <div className="projet-class-content-projet">
+          <ul>
+              {projects.map((project) => (
+                <li key={project.id}>
+                  <img src={project.images} alt={project.title}></img>
+                  <h2>{project.title}</h2>
+                  <p>{project.description}</p>
+                  <Link to={`/projects/${project.id}`}>Voir plus</Link>
+                </li>
+              ))}
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };

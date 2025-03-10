@@ -6,14 +6,14 @@ const projects = [
     title: "Projet 1",
     description: "Description rapide du projet 1.",
     details: "Détails complets du projet 1, expliquant en profondeur ce qui a été fait.",
-    images: "/media/imagetestp1-1.avif",
+    images: "/media/projet/7.png",
   },
   {
     id: "2",
     title: "Projet 2",
     description: "Description rapide du projet 2.",
     details: "Détails complets du projet 2, expliquant en profondeur ce qui a été fait.",
-    images: "/media/imagetestp2-1.jpg",
+    images: "/media/projet/7.png",
   },
 ];
 
@@ -22,10 +22,17 @@ const Projects = () => {
     <div className="projet-class">
       <div className="projet-class-box">
         <h1>Nos Projets</h1>
+        <p>Découvrez nos réalisations</p>
+        <button>Voir projets</button>
       </div>
       <div className="projet-class-content">
         <div className="projet-class-content-title">
-          <h1>Projets</h1>
+          <p>Chaque projet est une transformation unique, pensée et
+             réalisée avec soin. De la rénovation complète à l'aménagement
+              sur mesure, voici quelques-unes de nos créations. D'autres
+               réalisations viendront s'ajouter au fil du temps, toujours
+                avec la même exigence de qualité et de design
+          </p>
         </div>
         <div className="projet-class-content-projet">
           <ul>
@@ -34,7 +41,7 @@ const Projects = () => {
                   <img src={project.images} alt={project.title}></img>
                   <h2>{project.title}</h2>
                   <p>{project.description}</p>
-                  <Link to={`/projects/${project.id}`}>Voir plus</Link>
+                  <Link className="link-projet" to={`/projects/${project.id}`}>Voir plus</Link>
                 </li>
               ))}
           </ul>

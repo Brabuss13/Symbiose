@@ -6,7 +6,7 @@ const projects = [
       title: "Projet 1",
       description: "Description rapide du projet 1.",
       details: "Détails complets du projet 1, expliquant en profondeur ce qui a été fait.",
-      images: ["/media/imagetestp1-1.avif", "/media/imagetestp1-2.jpg"],
+      images: ["/media/projet/hotelZoologie/projetImgZoologie.png", "/media/"],
     },
     {
       id: "2",
@@ -26,11 +26,15 @@ const ProjectDetails = () => {
   }
 
   return (
-    <div className="projet-detail-class">
-      <h1>{project.title}</h1>
-      <p>{project.details}</p>
-
-      <div>
+    <div className="projet-detail-class" >
+      <div className="projet-detail-class-title">
+        {project.images.map((img, index) => (
+            <img key={index} src={img} alt={`Projet ${project.id} - ${index + 1}`} />
+        ))}
+        <h1>{project.title}</h1>
+        <p>{project.details}</p>
+      </div>
+      <div className="projet-content">
         {project.images.map((img, index) => (
             <img key={index} src={img} alt={`Projet ${project.id} - ${index + 1}`} />
         ))}

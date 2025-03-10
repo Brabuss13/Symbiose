@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import LoadingScreen from '../components/LoadingScreen';
 import Carousel from "../components/Carousel";
 import Navbar from "../components/Navbar";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
+// import { motion, useScroll, useTransform } from "framer-motion";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -17,10 +18,10 @@ const Home = () => {
   }, [menuOpen]);
   
   const [currentSlide, setCurrentSlide] = useState(0);
-  const { scrollYProgress } = useScroll(); // Détecte le scroll
-  const scale = useTransform(scrollYProgress, [0, 0.2], [1, 2]); // Grossissement
-  const y = useTransform(scrollYProgress, [0, 0.2], [0, -100]); // Déplacement vers le haut
-  const opacity = useTransform(scrollYProgress, [0.15, 0.2], [1, 0]); // Disparition progressive
+  // const { scrollYProgress } = useScroll();
+  // const scale = useTransform(scrollYProgress, [0, 0.2], [1, 2]);
+  // const y = useTransform(scrollYProgress, [0, 0.2], [0, -100]);
+  // const opacity = useTransform(scrollYProgress, [0.15, 0.2], [1, 0]);
 
   const titles = [
     "Projet 1",
@@ -56,7 +57,7 @@ const Home = () => {
                 <div className="home-containers"></div>
             )}
         <div className='top-page'>
-          <div className="parent-home-title">
+          {/* <div className="parent-home-title">
             {showAnimation && (
               <motion.img 
                 style={{ scale, y, opacity }} 
@@ -68,14 +69,14 @@ const Home = () => {
                 transition={{ duration:1, ease: "easeOut" }}
                 ></motion.img>
             )}
-          </div>
+          </div> */}
           <div className="parent-text-line">
             {showAnimation && (
               <motion.p
                 initial={{ x: "-100vw", opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1, ease: "easeOut" }}
-                className="text-line text-line-1"><strong>Sublimée votre intérieur</strong>
+                className="text-line text-line-1"><strong>Sublimez votre intérieur</strong>
               </motion.p>
             )}
             {showAnimation && (
@@ -86,6 +87,15 @@ const Home = () => {
                 className="text-line text-line-2"><span>fait partie de mon idéal de vie</span>
               </motion.p>
             )}
+          </div>
+          <div className="space-bar"></div>
+          <div className="parent-scroll-line">
+            <h2>Découvrir</h2>
+            <div className="logo-container">
+              <svg className="scroll-arrow" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </div>
           </div>
         </div>
 
@@ -146,7 +156,7 @@ const Home = () => {
                     et en finitions haut de gamme, j'ai eu l'honneur
                     d'intervenir sur des projets d'exception.
                     Au <strong>Palais-Royal de Paris</strong> au château de
-                    Saint-Mesme, <strong>Des villas a Saint-Tropez</strong>, en passant par 
+                    Saint-Mesme, <strong>des villas à Saint-Tropez</strong>, en passant par 
                     <strong>l'Hôtel de la Zoologie</strong>
                     , j'apporte mon savoir-faire aux
                     lieux les plus prestigieux. Mon travail
@@ -171,6 +181,8 @@ const Home = () => {
 
         <div className="space-bar"></div>
 
+        <div className="mywork"></div>
+
         <div className="texte-projet">
           <div className="texte-info-partie1-a">
             <div className="texte-info-partie1-a-texte">
@@ -179,11 +191,9 @@ const Home = () => {
           </div>
           <div className="texte-info-partie1-a">
             <div className="texte-info-partie1-a-texte">
-              <p>Que ce soit pour concevoir des sites vitrines percutants,
-                   développer des plateformes e-commerce dynamiques ou optimiser
-                    la visibilité avec notre savoir-faire en référencement,
-                     nous transcendons les frontières du digital en intégrant
-                      une dimension graphique captivante.
+              <p>Découvrez nos derniers projets, alliant design, fonctionnalité
+                 et savoir-faire. Chaque réalisation est le reflet de notre engagement
+                à créer des espaces uniques et adaptés aux besoins de nos clients.
               </p>
             </div>
           </div>
@@ -201,7 +211,27 @@ const Home = () => {
             <Carousel onSlideChange={setCurrentSlide}/>
           </div>
         </div>
-        
+
+        <div className="texte-projet text-projet2">
+          <div className="texte-info-partie1-a">
+            <div className="texte-info-partie1-a-texte texte-info-partie1-a-textee2">
+              <h1><strong>04 </strong> L'art de la décoration intérieure</h1>
+            </div>
+          </div>
+          <div className="texte-info-partie1-a">
+            <div className="texte-info-partie1-a-texte texte-info-partie1-a-texte2">
+              <p>Spécialiste en décoration d'ambiance intérieure, nous transformons vos espaces
+                 avec des matières nobles et des finitions haut de gamme. Enduit décoratif, béton ciré,
+                  travail à la chaux… chaque technique apporte une touche unique pour créer des
+                   atmosphères modernes, élégantes et authentiques. Découvrez nos savoir-faire en images.
+              </p>
+            </div>
+          </div>
+          
+        </div>
+
+        <div className="space20px"></div>
+
         <div className="home-companywork">
           <div className="home-companywork-img">
             <div className="gallery">
@@ -252,6 +282,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+        
       </div>
     );
   }

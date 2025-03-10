@@ -239,7 +239,7 @@ const Home = () => {
               <img className="img-2" src="/media/imgColor/pigmentcolor3.png" alt=""></img>
               <img className="img-3" src="/media/imgColor/bleuuu.jpg" alt=""></img>
               <img className="img-4" src="/media/projet/7.png" alt=""></img>
-              <img className="img-5" src="/media/IMG_9358.jpg" alt=""></img>
+              <img className="img-5" src="/media/IMG_9358.JPG" alt=""></img>
               <img className="img-6" src="/media/imgColor/verttt.jpg" alt=""></img>
               <img className="img-7" src="/media/imgColor/violettt.jpg" alt=""></img>
               <img className="img-8" src="/media/IMG_9356.jpg" alt=""></img>

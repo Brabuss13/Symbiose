@@ -200,7 +200,7 @@ html, body {
 }
 @media (max-width: 480px) {
   .top-page {
-    background-image: url(../public/media/IMG_9358.JPG);
+    background-image: url(../public/media/fondecrt.png);
     background-attachment: unset;
   }
 }

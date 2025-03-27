@@ -7,15 +7,15 @@ const projects = [
       title: "Hôtel de la Zoologie",
       description: "Description rapide du projet 1.",
       details: "Bordeaux France",
-      images: ["/media/projet/hotelZoologie/dfgdtggrt.png", "/media/"],
+      images: ["/media/projet/hotelZoologie/dfgdtggrt.png", "/media"],
     },
-    // {
-    //   id: "2",
-    //   title: "Projet 2",
-    //   description: "Description rapide du projet 2.",
-    //   details: "Détails complets du projet 2, expliquant en profondeur ce qui a été fait.",
-    //   images: ["/media/imagetestp2-1.jpg", "/media/imagetestp2-2.jpg"],
-    // },
+    {
+      id: "2",
+      title: "Projet 2",
+      description: "Description rapide du projet 2.",
+      details: "Détails complets du projet 2, expliquant en profondeur ce qui a été fait.",
+      images: ["/media/imagetestp2-1.jpg", "/media"],
+    },
   ];
 
 const ProjectDetails = () => {

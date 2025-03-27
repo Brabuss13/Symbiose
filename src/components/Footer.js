@@ -5,7 +5,7 @@ const Footer = () => {
     const { t } = useTranslation();
     return (
         <div className="footer">
-            <div class="footer-container">
+            <div className="footer-container">
                 <nav>
                     <ul>
                         <li><a href="/">{t("nav1")}</a></li>
@@ -15,7 +15,7 @@ const Footer = () => {
                     </ul>
                 </nav>
             </div>
-            <div class="footer-bottom">
+            <div className="footer-bottom">
                 <p>{t("navtext")}</p>
             </div>
         </div>

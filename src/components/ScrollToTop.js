@@ -6,7 +6,7 @@ function ScrollToTop() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [pathname]); // Exécute l'effet à chaque changement d'URL
+  }, [pathname]);
 
   return null;
 }

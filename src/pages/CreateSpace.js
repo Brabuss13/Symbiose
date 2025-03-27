@@ -36,24 +36,24 @@ const CreateSpace = () => {
         <div className="space-bar"></div>
         
         <div data-aos="fade-up" className="create-spacelist">
-          <div class="new-section">
-            <div class="border-left"></div>
+          <div className="new-section">
+            <div className="border-left"></div>
 
-            <div class="new-section-top">
-              <div class="image-box">
+            <div className="new-section-top">
+              <div className="image-box">
                 <img src='/media/metier/demolition1.jpg' alt=''></img>
               </div>
-              <div class="text-box">
+              <div className="text-box">
                 <h1>{t("text46")}</h1>
                 <p><strong>{t("text47")}</strong><br></br>{t("text48")}</p>
               </div>
             </div>
 
-            <div class="new-section-bottom">
-              <div class="image-box">
+            <div className="new-section-bottom">
+              <div className="image-box">
                 <img src='/media/metier/electricien.jpeg' alt=''></img>
               </div>
-              <div class="text-box">
+              <div className="text-box">
                 <h1>{t("text49")}</h1>
                 <p><strong>{t("text50")}</strong><br></br>{t("text51")}</p>
               </div>
@@ -63,49 +63,49 @@ const CreateSpace = () => {
         </div>
 
         <div data-aos="fade-up" className="service-reno">
-            <div class="container-reno">
-              <div class="grid">
-                <div class="card">
-                  <div class="overlay">{t("text52")}</div>
+            <div className="container-reno">
+              <div className="grid">
+                <div className="card">
+                  <div className="overlay">{t("text52")}</div>
                 </div>
-                <div class="card">
-                  <div class="overlay">{t("text53")}</div>
+                <div className="card">
+                  <div className="overlay">{t("text53")}</div>
                 </div>
-                <div class="card">
-                  <div class="overlay">{t("text54")}</div>
+                <div className="card">
+                  <div className="overlay">{t("text54")}</div>
                 </div>
-                <div class="card">
-                  <div class="overlay">{t("text55")}</div>
+                <div className="card">
+                  <div className="overlay">{t("text55")}</div>
                 </div>
-                <div class="card">
-                  <div class="overlay">{t("text56")}</div>
+                <div className="card">
+                  <div className="overlay">{t("text56")}</div>
                 </div>
-                <div class="card">
-                  <div class="overlay">{t("text57")}</div>
+                <div className="card">
+                  <div className="overlay">{t("text57")}</div>
                 </div>
               </div>
             </div>
           </div>
 
           <div data-aos="fade-up" className="create-spacelist create-spacelist2">
-          <div class="new-section">
-            <div class="border-left border-left1"></div>
+          <div className="new-section">
+            <div className="border-left border-left1"></div>
 
-            <div class="new-section-top">
-              <div class="image-box">
+            <div className="new-section-top">
+              <div className="image-box">
                 <img src='/media/metier/carreleur.jpg' alt=''></img>
               </div>
-              <div class="text-box text-box1">
+              <div className="text-box text-box1">
                 <h1>{t("text58")}</h1>
                 <p><strong>{t("text59")}</strong><br></br>{t("text60")}</p>
               </div>
             </div>
 
-            <div class="new-section-bottom">
-              <div class="image-box">
+            <div className="new-section-bottom">
+              <div className="image-box">
                 <img src='/media/metier/peintre.jpeg' alt=''></img>
               </div>
-              <div class="text-box text-box1">
+              <div className="text-box text-box1">
                 <h1>{t("text61")}</h1>
                 <p><strong>{t("text62")}</strong><br></br>{t("text63")}
                 </p>
@@ -116,24 +116,24 @@ const CreateSpace = () => {
         </div>
 
         <div data-aos="fade-up" className="create-spacelist create-spacelist2">
-          <div class="new-section">
-            <div class="border-left border-left1"></div>
+          <div className="new-section">
+            <div className="border-left border-left1"></div>
 
-            <div class="new-section-top">
-              <div class="image-box">
+            <div className="new-section-top">
+              <div className="image-box">
                 <img src='/media/metier/placo.jpeg' alt=''></img>
               </div>
-              <div class="text-box text-box1">
+              <div className="text-box text-box1">
                 <h1>{t("text64")}</h1>
                 <p><strong>{t("text65")}</strong><br></br>{t("text66")}</p>
               </div>
             </div>
 
-            <div class="new-section-bottom">
-              <div class="image-box">
+            <div className="new-section-bottom">
+              <div className="image-box">
                 <img src='/media/metier/parquet.jpg' alt=''></img>
               </div>
-              <div class="text-box text-box1">
+              <div className="text-box text-box1">
                 <h1>{t("text67")}</h1>
                 <p><strong>{t("text68")}</strong><br></br>{t("text69")}</p>
               </div>

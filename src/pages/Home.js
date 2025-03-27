@@ -83,7 +83,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="space-bar"></div>
+        <div className="space-bar space-bar-afterhome"></div>
 
         <div data-aos="fade-up" className="home-information">
           <div data-aos="fade-up" className="home-information-box1 home-information-box">

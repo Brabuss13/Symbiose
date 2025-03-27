@@ -314,6 +314,11 @@ html, body {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(10px); }
 }
+@media (max-width: 768px) {
+  .space-bar-afterhome {
+    display: none;
+  }
+}
 /*----------Home-info----------*/
 .home-information {
   min-height: 100vh;
@@ -336,10 +341,10 @@ html, body {
   min-height: 60vh;
   width: 80%;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .home-information .home-information-box {
     flex-direction: column;
-    height: 75%;
+    height: 50%;
     width: 100%;
   }
 }
@@ -353,7 +358,7 @@ html, body {
   height: 100%;
   width: 50%;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .home-information-box .home-information-box1-content {
     width: 100%;
   }
@@ -365,8 +370,9 @@ html, body {
   align-items: center;
   justify-content:center;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .home-information-box1-content .box1-content-box-img {
+    display: none;
     flex-direction: column;
   }
 }
@@ -525,7 +531,7 @@ html, body {
   align-items: flex-end !important;
   justify-content: flex-start !important;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .home-information-box1-content2 {
     width: 100%;
     display: flex;
@@ -580,6 +586,12 @@ html, body {
 .home-information-box1-content2 p strong {
   font-size: 22px;
   font-weight: 400;
+}
+@media (max-width: 768px) {
+  .home-information-box1-content1 {
+    display: none !important;
+
+  }
 }
 /*----------Text-projet---------*/
 .texte-projet {

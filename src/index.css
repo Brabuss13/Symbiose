@@ -474,11 +474,53 @@ html, body {
   height: 100%;
   width: 100%;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .home-information-box2-content {
     width: 100%;
     height: 90%;
     flex-direction: column;
+    display: none;
+  }
+}
+.home-information-box2-content-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .home-information-box2-content-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../public/media/vberteee.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .home-information-box2-content-mobile-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .home-information-box2-content-mobile-bck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000004f;
+    border: solid 2px white;
+    width: 100%;
+    height: 100%;
+  }
+  .home-information-box2-content-mobile-bck h1 {
+    color: white;
+    text-align: center;
+    font-size: 60px;
   }
 }
 .background-img-22 {

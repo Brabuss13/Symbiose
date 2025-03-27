@@ -112,6 +112,13 @@ const Home = () => {
               <div className="home-information-box2-content-img"></div>
               <div className="home-information-box2-content-text">{t("text8")}<br></br>{t("text9")}</div>
             </div>
+            <div className="home-information-box2-content-mobile">
+              <div className="home-information-box2-content-mobile-text">
+                <div className="home-information-box2-content-mobile-bck">
+                  <h1>{t("text8")}{t("text9")}</h1>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div data-aos="fade-up" className="home-information-box1 home-information-box">

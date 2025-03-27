@@ -166,7 +166,6 @@ const Home = () => {
           <div className="description2-texte">
             <h1>{titles[currentSlide]}</h1>
             <h2>{texts[currentSlide]}</h2>
-            {/* <p>{descriptions[currentSlide]}</p> */}
             <button>{t("text21")}</button>
           </div>
           <div className="description1-carusel">

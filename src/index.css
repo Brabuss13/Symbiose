@@ -499,6 +499,16 @@ html, body {
   }
 }
 @media (max-width: 768px) {
+  .version2 {
+    background-image: url(../public/media/projet/7.png);
+  }
+  .home-information-box2-content-mobile-bck h2 {
+    color: white;
+    text-align: center;
+    font-size: 45px;
+  }
+}
+@media (max-width: 768px) {
   .home-information-box2-content-mobile-text {
     display: flex;
     justify-content: center;
@@ -645,19 +655,23 @@ html, body {
   background-color: rgb(0, 0, 0);
   box-shadow: 10px -10px 20px rgba(160, 160, 160, 0.658), 0px 10px 20px rgba(153, 153, 153, 0.658);
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .texte-projet {
     height: 500px;
     width: 100%;
     align-items: center;
     flex-direction: column;
     margin-bottom: 10px;
+    box-shadow: none;
+    background-color: #7e675a;
+    border-top: double 50px rgb(255, 255, 255);
+    border-bottom: double 50px rgb(255, 255, 255);
   }
 }
 .text-projet2 {
   background-color: #7e675a;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .text-projet2 {
     height: 600px;
     width: 100%;

@@ -148,10 +148,17 @@ const Home = () => {
               <div className="home-information-box2-content-img background-img-23"></div>
               <div className="home-information-box2-content-text">{t("text20")}</div>
             </div>
+            <div className="home-information-box2-content-mobile version2">
+              <div className="home-information-box2-content-mobile-text">
+                <div className="home-information-box2-content-mobile-bck">
+                  <h2>{t("text20")}</h2>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="space-bar"></div>
+        <div className="space-bar space-bar-afterhome"></div>
 
         <div data-aos="fade-up" className="mywork"></div>
 

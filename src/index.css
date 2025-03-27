@@ -1136,7 +1136,7 @@ html, body {
   color: #ffffff;
   font-size: 20px;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .projet-class-box p {
     font-size: 18px;
   }
@@ -1150,7 +1150,11 @@ html, body {
 @media (max-width: 480px) {
   .projet-class-box button {
     font-size: 12px;
-    padding: 14px;
+    font-weight: 700;
+    padding: 20px;
+    color: rgb(127 103 90);
+    background-color: rgb(255, 255, 255);
+    border: none;
   }
 }
 .projet-class-content {
@@ -2207,7 +2211,7 @@ nav ul {
   margin: 0;
   text-align: center;
 }
-nav ul li a {
+nav ul a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 16px;

@@ -4,27 +4,27 @@ import { useTranslation } from "react-i18next";
 const CreateSpace = () => {
   const { t } = useTranslation();
     return (
-      <div className='creat-space-class'>
-        <div data-aos="fade-up" className='creat-space-back'>
+      <div className="creat-space-class">
+        <div data-aos="fade-up" className="creat-space-back">
           <h1>{t("text39")}</h1>
         </div>
 
-        <div data-aos="fade-up" className='creat-space-info'>
+        <div data-aos="fade-up" className="creat-space-info">
           <h1>{t("text40")}</h1>
         </div>
 
-        <div data-aos="fade-up" className='creat-space-stucco-mortex'>
-          <div className='creat-space-stucco-mortex-box'>
-            <div className='stucco-mortex-box1tittle'>
+        <div data-aos="fade-up" className="creat-space-stucco-mortex">
+          <div className="creat-space-stucco-mortex-box">
+            <div className="stucco-mortex-box1tittle">
               <h1>{t("text41")}</h1>
             </div>
-            <div className='stucco-mortex-box2content'>
-              <div className='partie1sm partieallsm'>
+            <div className="stucco-mortex-box2content">
+              <div className="partie1sm partieallsm">
                 <img src='/media/stucetmortex/stuccoc.jpg' alt=''></img>
                 <h3>{t("text42")}</h3>
                 <p>{t("text43")}</p>
               </div>
-              <div className='partie2sm partieallsm'>
+              <div className="partie2sm partieallsm">
                 <img src='/media/vberteee.png' alt=''></img>
                 <h3>{t("text44")}</h3>
                 <p>{t("text45")}</p>
@@ -35,7 +35,7 @@ const CreateSpace = () => {
 
         <div className="space-bar"></div>
         
-        <div data-aos="fade-up" className='create-spacelist'>
+        <div data-aos="fade-up" className="create-spacelist">
           <div class="new-section">
             <div class="border-left"></div>
 
@@ -62,7 +62,7 @@ const CreateSpace = () => {
           </div>
         </div>
 
-        <div data-aos="fade-up" className='service-reno'>
+        <div data-aos="fade-up" className="service-reno">
             <div class="container-reno">
               <div class="grid">
                 <div class="card">
@@ -87,7 +87,7 @@ const CreateSpace = () => {
             </div>
           </div>
 
-          <div data-aos="fade-up" className='create-spacelist create-spacelist2'>
+          <div data-aos="fade-up" className="create-spacelist create-spacelist2">
           <div class="new-section">
             <div class="border-left border-left1"></div>
 
@@ -115,7 +115,7 @@ const CreateSpace = () => {
           </div>
         </div>
 
-        <div data-aos="fade-up" className='create-spacelist create-spacelist2'>
+        <div data-aos="fade-up" className="create-spacelist create-spacelist2">
           <div class="new-section">
             <div class="border-left border-left1"></div>
 

@@ -20,14 +20,14 @@ const LoadingScreen = ({ onFinish }) => {
     return (
         <div className={`loading-container ${fadeOut ? 'fade-out' : ''}`}>
             {!showText ? (
-                <div className='image-wrapper'>
-                    <div className='rotating-bar'></div>
+                <div className="image-wrapper">
+                    <div className="rotating-bar"></div>
                     <img src="../../media/logosymbiose.png" alt="Logo" className="loading-logo" />
                 </div>
             ) : (
                 <>
-                    <div className='border-bar top-left'></div>
-                    <div className='border-bar bottom-left'></div>
+                    <div className="border-bar top-left"></div>
+                    <div className="border-bar bottom-left"></div>
                     <p className="loading-text"><strong>{t("text70")}</strong>{t("text71")}</p>
                 </>
             )}

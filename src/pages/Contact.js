@@ -44,20 +44,20 @@ const Contact = () => {
   };
   const { t } = useTranslation();
   return (
-    <div className='Contact-page'>
-      <div data-aos="fade-up" className='contact-page-block1'>
-        <div className='contact-page-block1-text'>
+    <div className="Contact-page">
+      <div data-aos="fade-up" className="contact-page-block1">
+        <div className="contact-page-block1-text">
           <h1>{t("text36")}</h1>
           <p>{t("text377")}</p>
         </div>
       </div>
-      <div className='contact-page-block3'></div>
-      <div data-aos="fade-up" className='contact-page-block2'>
-        <div className='contact-class'>
+      <div className="contact-page-block3"></div>
+      <div data-aos="fade-up" className="contact-page-block2">
+        <div className="contact-class">
           <h1>{t("text72")}</h1>
           {isSent && <p style={{ color: 'green' }}>Message envoyé avec succès !</p>}
           {error && <p style={{ color: 'red' }}>{error}</p>}
-          <form className='form-class' onSubmit={handleSubmit}>
+          <form className="form-class" onSubmit={handleSubmit}>
             <input type="text" name="name" placeholder="Nom" value={formData.name} onChange={handleChange} />
             <input type="text" name="surname" placeholder="Prénom" value={formData.surname} onChange={handleChange} />
             <input type="tel" name="phone" placeholder="Numéro de téléphone" value={formData.phone} onChange={handleChange} />

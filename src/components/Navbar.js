@@ -8,8 +8,8 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
     const { t } = useTranslation();
 
     return (
-        <div className='navbar'>
-            <div className='navbar-container'>
+        <div className="navbar">
+            <div className="navbar-container">
                 <div className="navbar-left">
                     <Link to="/" className={location.pathname === "/" ? "active" : ""} onClick={() => setMenuOpen(false)}>{t("nav1")}</Link>
                     <Link to="/projects" className={location.pathname === "/projects" ? "active" : ""} onClick={() => setMenuOpen(false)}>{t("nav2")}</Link>

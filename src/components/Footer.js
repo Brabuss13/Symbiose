@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 const Footer = () => {
     const { t } = useTranslation();
     return (
-        <div className='footer'>
+        <div className="footer">
             <div class="footer-container">
                 <nav>
                     <ul>

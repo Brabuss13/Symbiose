@@ -53,7 +53,7 @@ const Home = () => {
             ) : (
                 <div className="home-containers"></div>
             )}
-        <div className='top-page'>
+        <div className="top-page">
           <div className="parent-text-line">
             {showAnimation && (
               <motion.p
@@ -163,13 +163,13 @@ const Home = () => {
         </div>
 
         <div data-aos="fade-up" className='home-page'>
-          <div className='description2-texte'>
+          <div className="description2-texte">
             <h1>{titles[currentSlide]}</h1>
             <h2>{texts[currentSlide]}</h2>
             {/* <p>{descriptions[currentSlide]}</p> */}
             <button>{t("text21")}</button>
           </div>
-          <div className='description1-carusel'>
+          <div className="description1-carusel">
             <Carousel onSlideChange={setCurrentSlide}/>
           </div>
         </div>
@@ -212,8 +212,8 @@ const Home = () => {
 
         <div className="space20px"></div>
 
-        <div data-aos="fade-up" className='home-space'>
-          <div className='space-link'>
+        <div data-aos="fade-up" className="home-space">
+          <div className="space-link">
             <div className="space-link-box">
               <h1>{t("text24")}</h1>
               <h2>{t("text25")}</h2>

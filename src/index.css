@@ -198,6 +198,11 @@ html, body {
   background-attachment: fixed;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.575);
 }
+@media (max-width: 480px) {
+  .top-page {
+    background-image: url(../public/media/homefondmobile.png);
+  }
+}
 .parent-home-title {
   height: 50vh;
   display: flex;

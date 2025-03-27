@@ -201,7 +201,7 @@ html, body {
 @media (max-width: 480px) {
   .top-page {
     background-image: url(../public/media/IMG_9358.JPG);
-    width: 100vw;
+    background-attachment: unset;
   }
 }
 .parent-home-title {
@@ -239,6 +239,11 @@ html, body {
 @media (max-width: 480px) {
   .parent-text-line {
     height: 80vh;
+  }
+}
+@media (max-width: 480px) {
+  .space-barhome {
+    height: 0px;
   }
 }
 .parent-text-line .text-line {
@@ -287,7 +292,7 @@ html, body {
 }
 @media (max-width: 480px) {
   .parent-scroll-line {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
   }
 }
 .logo-container {

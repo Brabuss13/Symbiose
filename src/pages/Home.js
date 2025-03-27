@@ -72,7 +72,7 @@ const Home = () => {
               </motion.p>
             )}
           </div>
-          <div className="space-bar"></div>
+          <div className="space-bar space-barhome"></div>
           <div className="parent-scroll-line">
             <h2>{t("text3")}</h2>
             <div className="logo-container">

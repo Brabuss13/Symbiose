@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from "react-i18next";
 
 const LoadingScreen = ({ onFinish }) => {
     const [showText, setShowText] = useState(false);
@@ -15,7 +16,7 @@ const LoadingScreen = ({ onFinish }) => {
             clearTimeout(finishTimer);
         };
     }, [onFinish]);
-
+    const { t } = useTranslation();
     return (
         <div className={`loading-container ${fadeOut ? 'fade-out' : ''}`}>
             {!showText ? (
@@ -27,7 +28,7 @@ const LoadingScreen = ({ onFinish }) => {
                 <>
                     <div className='border-bar top-left'></div>
                     <div className='border-bar bottom-left'></div>
-                    <p className="loading-text"><strong>Authenticité</strong> d'un coloriste matiériste</p>
+                    <p className="loading-text"><strong>{t("text70")}</strong>{t("text71")}</p>
                 </>
             )}
         </div>

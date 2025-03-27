@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -39,29 +40,21 @@ const Contact = () => {
       setFormData({ name: '', surname: '', email: '', message: '' });
     })
     .catch(() => setError('Une erreur est survenue. Réessayez plus tard.'));
-  };
 
+  };
+  const { t } = useTranslation();
   return (
     <div className='Contact-page'>
-      <div className='contact-page-block1'>
+      <div data-aos="fade-up" className='contact-page-block1'>
         <div className='contact-page-block1-text'>
-          <h1>Nous contacter</h1>
-          <p>Une idée, un projet, une rénovation ? Contactez-nous dès maintenant !
-             Utilisez le formulaire juste à droite pour nous faire part de vos envies.
-              Que ce soit pour transformer un espace existant ou créer quelque chose de
-               totalement nouveau, nous sommes là pour vous accompagner à chaque étape.
-          </p>
-          <div class="social-icons">
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-          </div>
+          <h1>{t("text36")}</h1>
+          <p>{t("text377")}</p>
         </div>
       </div>
       <div className='contact-page-block3'></div>
-      <div className='contact-page-block2'>
+      <div data-aos="fade-up" className='contact-page-block2'>
         <div className='contact-class'>
-          <h1>Contactez-nous</h1>
+          <h1>{t("text72")}</h1>
           {isSent && <p style={{ color: 'green' }}>Message envoyé avec succès !</p>}
           {error && <p style={{ color: 'red' }}>{error}</p>}
           <form className='form-class' onSubmit={handleSubmit}>
@@ -70,7 +63,7 @@ const Contact = () => {
             <input type="tel" name="phone" placeholder="Numéro de téléphone" value={formData.phone} onChange={handleChange} />
             <input type="email" name="email" placeholder="Adresse email" value={formData.email} onChange={handleChange} />
             <textarea name="message" placeholder="Votre message" value={formData.message} onChange={handleChange} />
-            <button type="submit">Envoyer</button>
+            <button type="submit">{t("text38")}</button>
           </form>
         </div>
       </div>

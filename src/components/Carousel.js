@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Carousel = ({ onSlideChange }) => {
   const images = [
-    "/media/IMG_20241219_103648900.jpg",
+    "/media/projet/hotelZoologie/zz9.avif",
     "/media/IMG_9358.JPG",
     "/media/IMG_9356.jpg",
   ];

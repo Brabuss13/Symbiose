@@ -7,12 +7,14 @@ import ProjetDetails from "./pages/ProjectDetails";
 import CreateSpace from "./pages/CreateSpace";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop"
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <Router>
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projets />} />

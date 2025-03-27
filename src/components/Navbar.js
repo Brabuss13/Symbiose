@@ -1,58 +1,18 @@
-// import React from 'react';
-// import { Link, useLocation } from 'react-router-dom';
-
-// const Navbar = ({ menuOpen, setMenuOpen }) => {
-//     const location = useLocation();
-
-//     return (
-//         <div className='navbar'>
-//             <div className='navbar-container'>
-//                 <div className='burger-menu' onClick={() => setMenuOpen(!menuOpen)}>
-//                     ☰
-//                 </div>
-//                 <nav className={menuOpen ? "menu-open" : ""}>
-//                     <ul>
-//                         <li className={`li1 ${location.pathname === "/" ? "active" : ""}`}>
-//                             <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
-//                         <li className={`li3 ${location.pathname === "/projects" ? "active" : ""}`}>
-//                             <Link to="/projects" onClick={() => setMenuOpen(false)}>Projets</Link></li>
-//                         <li className={`li4 ${location.pathname === "/create-space" ? "active" : ""}`}>
-//                             <Link to="/create-space" onClick={() => setMenuOpen(false)}>Créer ton espace</Link></li>
-//                         <li className="li2">
-//                             <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
-//                     </ul>
-//                 </nav> 
-//                 {menuOpen && (
-//                     <div className="mobile-menu">
-//                         <button className="close-btn" onClick={() => setMenuOpen(false)}>✖</button>
-//                         <ul>
-//                             <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
-//                             <li><Link to="/projects" onClick={() => setMenuOpen(false)}>Projets</Link></li>
-//                             <li><Link to="/create-space" onClick={() => setMenuOpen(false)}>Créer ton espace</Link></li>
-//                             <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
-//                         </ul>
-//                     </div>
-//                 )}
-//             </div>
-//         </div>
-//     );
-//   }
-  
-//   export default Navbar;
-  
-
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import LanguageSwitcher from './LanguageSwitcher';
+import { useTranslation } from "react-i18next";
 
 const Navbar = ({ menuOpen, setMenuOpen }) => {
     const location = useLocation();
+    const { t } = useTranslation();
 
     return (
         <div className='navbar'>
             <div className='navbar-container'>
                 <div className="navbar-left">
-                    <Link to="/" className={location.pathname === "/" ? "active" : ""} onClick={() => setMenuOpen(false)}>Home</Link>
-                    <Link to="/projects" className={location.pathname === "/projects" ? "active" : ""} onClick={() => setMenuOpen(false)}>Projets</Link>
+                    <Link to="/" className={location.pathname === "/" ? "active" : ""} onClick={() => setMenuOpen(false)}>{t("nav1")}</Link>
+                    <Link to="/projects" className={location.pathname === "/projects" ? "active" : ""} onClick={() => setMenuOpen(false)}>{t("nav2")}</Link>
                 </div>
 
                 <div className="navbar-center">
@@ -62,8 +22,9 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
                 </div>
 
                 <div className="navbar-right">
-                    <Link to="/create-space" className={location.pathname === "/create-space" ? "active" : ""} onClick={() => setMenuOpen(false)}>Créer ton espace</Link>
-                    <Link to="/contact" className={location.pathname === "/contact" ? "active" : ""} onClick={() => setMenuOpen(false)}>Contact</Link>
+                    <Link to="/create-space" className={location.pathname === "/create-space" ? "active" : ""} onClick={() => setMenuOpen(false)}>{t("nav3")}</Link>
+                    <Link to="/contact" className={location.pathname === "/contact" ? "active" : ""} onClick={() => setMenuOpen(false)}>{t("nav4")}</Link>
+                    <LanguageSwitcher/>
                 </div>
 
                 <div className='burger-menu' onClick={() => setMenuOpen(!menuOpen)}>☰</div>
@@ -72,11 +33,12 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
                     <div className="mobile-menu">
                         <button className="close-btn" onClick={() => setMenuOpen(false)}>✖</button>
                         <ul>
-                            <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
-                            <li><Link to="/projects" onClick={() => setMenuOpen(false)}>Projets</Link></li>
-                            <li><Link to="/create-space" onClick={() => setMenuOpen(false)}>Créer ton espace</Link></li>
-                            <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
+                            <li><Link to="/" onClick={() => setMenuOpen(false)}>{t("nav1")}</Link></li>
+                            <li><Link to="/projects" onClick={() => setMenuOpen(false)}>{t("nav2")}</Link></li>
+                            <li><Link to="/create-space" onClick={() => setMenuOpen(false)}>{t("nav3")}</Link></li>
+                            <li><Link to="/contact" onClick={() => setMenuOpen(false)}>{t("nav4")}</Link></li>
                         </ul>
+                        <LanguageSwitcher/>
                     </div>
                 )}
             </div>

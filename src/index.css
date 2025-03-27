@@ -977,7 +977,7 @@ html, body {
 }
 @media (max-width: 480px) {
   .space-link-box h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 .space-link-box h2 {
@@ -989,7 +989,7 @@ html, body {
 }
 @media (max-width: 480px) {
   .space-link-box h2 {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 .space-link-box p {
@@ -1007,12 +1007,22 @@ html, body {
 }
 .button-space {
   height: 90px;
-  width: 160px;
+  width: 400px;
   font-size: 20px;
   font-weight: 500;
   color: #000000;
   padding: 20px;
-
+}
+@media (max-width: 768px) {
+  .button-space {
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    border: double 10px rgb(255, 255, 255);
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+  }
 }
 /*---------Contact----------*/
 .home-contact {
@@ -1034,6 +1044,11 @@ html, body {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .contact-box {
+    justify-content: flex-end;
+  }
+}
 .contact-box::before {
   content: "";
   position: absolute;
@@ -1054,9 +1069,13 @@ html, body {
   font-size: 100px;
   font-weight: 900;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .contact-box-title {
     font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
   }
 }
 .contact-box-button {
@@ -1074,9 +1093,9 @@ html, body {
   width: 70%;
   border: solid 1px rgb(0, 0, 0);
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .contact-box-button-box {
-    width: 90%;
+    width: 98%;
     height: 30%
   }
 }
@@ -2186,6 +2205,7 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 nav ul li a {
   text-decoration: none;

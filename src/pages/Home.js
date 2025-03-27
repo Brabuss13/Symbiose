@@ -216,7 +216,7 @@ const Home = () => {
               <img className="img-8" src="/media/IMG_9356.jpg" alt=""></img>
               <img className="img-9" src="/media/imgColor/pigmentcolor.jpg" alt=""></img>
               <img className="img-10" src="/media/test/imageplusdsombre.jpg" alt=""></img>
-              <img className="img-11" src="/media/IMG_9355.png" alt=""></img>
+              <img className="img-11" src="/media/projet/hotelZoologie/zz3.avif" alt=""></img>
               <img className="img-12" src="/media/imgColor/ftyjtyhytghjh.jpg" alt=""></img>
               <img className="img-13" src="/media/projet/8.png" alt=""></img>
             </div>

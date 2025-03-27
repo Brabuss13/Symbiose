@@ -201,6 +201,8 @@ html, body {
 @media (max-width: 480px) {
   .top-page {
     background-image: url(../public/media/IMG_9358.JPG);
+    width: 100vw;
+    background-attachment: unset;
   }
 }
 .parent-home-title {

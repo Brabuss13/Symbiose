@@ -244,7 +244,9 @@ const Home = () => {
           </div>
         </div>
  
-        <div className="space-bar"></div> 
+        <div className="space-bar space-bar-afterhome"></div>
+        <div className="space-bar space-bar-afterhome"></div> 
+        <div className="space-bar space-bar-afterhome"></div>  
 
         <div data-aos="fade-up" className='home-contact'>
           <div className="contact-box">

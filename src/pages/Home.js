@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link, useLocation } from 'react-router-dom';
 import LoadingScreen from '../components/LoadingScreen';
 import Carousel from "../components/Carousel";
 import Navbar from "../components/Navbar";
@@ -44,6 +45,8 @@ const Home = () => {
     useEffect(() => {
       AOS.init({ duration: 1000 });
     }, []);
+
+    const location = useLocation();
 
     return (
       <div className='home'>
@@ -180,7 +183,9 @@ const Home = () => {
           <div className="description2-texte">
             <h1>{titles[currentSlide]}</h1>
             <h2>{texts[currentSlide]}</h2>
-            <button>{t("text21")}</button>
+            <Link to="/projects" className={location.pathname === "/projects" ? "active" : ""} onClick={() => setMenuOpen(false)}>
+              <button>{t("text21")}</button>
+            </Link>
           </div>
           <div className="description1-carusel">
             <Carousel onSlideChange={setCurrentSlide}/>
@@ -232,17 +237,23 @@ const Home = () => {
               <h2>{t("text25")}</h2>
               <p>{t("text26")}
               </p>
-              <button className="button-space">{t("text27")}</button>
+              <Link to="/create-space" className={location.pathname === "/create-space" ? "active" : ""} onClick={() => setMenuOpen(false)}>
+                <button className="button-space">{t("text27")}</button>
+              </Link>
             </div>
           </div>
         </div>
+ 
+        <div className="space-bar"></div> 
 
         <div data-aos="fade-up" className='home-contact'>
           <div className="contact-box">
             <div className="contact-box-title">{t("text28")}</div>
             <div className="contact-box-button">
               <div className="contact-box-button-box">
-                <button className="contact-box-button-box-butn">{t("text29")}</button>
+                <Link to="/contact" className={location.pathname === "/contact" ? "active" : ""} onClick={() => setMenuOpen(false)}>
+                  <button className="contact-box-button-box-butn">{t("text29")}</button>
+                </Link>
               </div>
             </div>
           </div>

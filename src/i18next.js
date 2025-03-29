@@ -51,7 +51,7 @@ i18n
           text40: "Que ce soit pour une rénovation complète ou une transformation partielle, nous prenons en charge chaque étape de votre projet. De la démolition à la finition, nous réalisons tous les travaux nécessaires : électricité, carrelage, peinture, placo, parquet… Chaque détail est soigneusement pensé pour créer un espace harmonieux, fonctionnel et à votre image. Faites-nous part de votre projet, et ensemble, donnons-lui vie.",
           text41: "Stucco et Mortex",
           text42: "Une finition élégante et raffinée",
-          text43: "Le stucco est un enduit décoratif qui apporte profondeur et caractère à vos murs. Inspiré des techniques traditionnelles italiennes, il offre un effet marbré subtil et une texture lisse au toucher. Parfait pour créer une ambiance sophistiquée et intemporelle, il s'adapte aussi bien aux intérieurs classiques que contemporains.",
+          text43: "Le stucco est un enduit décoratif qui apporte profondeur et caractère. Inspiré des techniques traditionnelles italiennes, il offre un effet marbré subtil et une texture lisse au toucher. Parfait pour créer une ambiance sophistiquée et intemporelle, il s'adapte aussi bien aux intérieurs classiques que contemporains.",
           text44: "La robustesse alliée à l'esthétique",
           text45: "Le Mortex est un revêtement minéral alliant résistance et finesse. Idéal pour les sols, murs, plans de travail ou salles de bain, il crée un effet béton ciré moderne et épuré. Son imperméabilité et sa durabilité en font un choix parfait pour un intérieur design et fonctionnel.",
           text46: "Démolition",

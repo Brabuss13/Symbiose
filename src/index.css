@@ -915,6 +915,12 @@ html, body {
 .img-11 { grid-column: span 2; grid-row: span 6; }
 .img-12 { grid-column: span 1; grid-row: span 3; }
 .img-13 { grid-column: span 1; grid-row: span 3; }
+.img-14 { grid-column: span 1; grid-row: span 3; }
+.img-15 { grid-column: span 1; grid-row: span 3; }
+.img-16 { grid-column: span 2; grid-row: span 3; }
+.img-17 { grid-column: span 2; grid-row: span 3; }
+.img-18 { grid-column: span 1; grid-row: span 3; }
+.img-19 { grid-column: span 1; grid-row: span 3; }
 
 @media (max-width: 480px) {
   .img-1 { grid-column: span 1; grid-row: span 3; }
@@ -930,6 +936,12 @@ html, body {
   .img-11 { grid-column: span 1; grid-row: span 2; }
   .img-12 { grid-column: span 1; grid-row: span 1; }
   .img-13 { grid-column: span 1; grid-row: span 2; }
+  .img-14 { grid-column: span 1; grid-row: span 2; }
+  .img-15 { grid-column: span 1; grid-row: span 2; }
+  .img-16 { grid-column: span 1; grid-row: span 2; }
+  .img-17 { grid-column: span 1; grid-row: span 2; }
+  .img-18 { grid-column: span 1; grid-row: span 2; }
+  .img-19 { grid-column: span 1; grid-row: span 2; }
 }
 /*----------space---------*/
 .space20px {
@@ -1434,13 +1446,13 @@ html, body {
   background-image: url(../public/media/projet/hotelZoologie/zz2.avif);
 }
 .im3 {
-  background-image: url(../public/media/projet/hotelZoologie/zz3.avif);
+  background-image: url(../public/media/rfggrgg.avif);
 }
 .im4 {
   background-image: url(../public/media/projet/hotelZoologie/zz5.avif);
 }
 .im5 {
-  background-image: url(../public/media/projet/hotelZoologie/zz4.avif);
+  background-image: url(../public/media/projet/hotelZoologie/zz3.avif);
 }
 .im6 {
   background-image: url(../public/media/projet/hotelZoologie/zz6.avif);
@@ -1449,7 +1461,7 @@ html, body {
   background-image: url(../public/media/projet/hotelZoologie/zz7.avif);
 }
 .im7 {
-  background-image: url(../public/media/rfggrgg.avif);
+  background-image: url(../public/media/projet/hotelZoologie/zz4.avif);
 }
 /*---------creat-space----------*/
 .creat-space-class {
@@ -1815,11 +1827,16 @@ html, body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   background: rgba(0, 0, 0, 0.5);
-  padding: 10px 15px;
+  padding: 20%;
   border-radius: 5px;
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 480px) {
   .overlay {
@@ -1838,9 +1855,9 @@ html, body {
 .card:nth-child(1) { background-image: url('/public/media/projet/7.png'); }
 .card:nth-child(2) { background-image: url('/public/media/projet/8.png'); }
 .card:nth-child(3) { background-image: url('/public/media/test/24664173_m.jpg'); }
-.card:nth-child(4) { background-image: url('/public/media/test/beigebackground.png'); }
+.card:nth-child(4) { background-image: url('/public/media/vberteee.png'); }
 .card:nth-child(5) { background-image: url('/public/media/test/M-creations_ArtisanPainting_texture_stucco_00001.jpg'); }
-.card:nth-child(6) { background-image: url('/public/media/vberteee.png'); }
+.card:nth-child(6) { background-image: url('/public/media/test/beigebackground.png'); }
 
 .creat-space-stucco-mortex {
   height: auto;
@@ -1904,22 +1921,18 @@ html, body {
   object-fit: cover;
   border: solid 4px white;
 }
-@media (max-width: 480px) {
-  .partieallsm img {
-    height: 150px;
-    width: 200px;
-  }
-}
 @media (max-width: 768px) {
   .partieallsm img {
-    height: 150px;
-    width: 200px;
+    height: 200px;
+    width: 300px;
   }
 }
 .partieallsm h3 {
   width: 80%;
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
+  font-family: "Ephesis", cursive !important;
+  font-weight: 400;
 }
 @media (max-width: 480px) {
   .partieallsm h3 {
@@ -1944,7 +1957,8 @@ html, body {
 }
 .partieallsm p {
   width: 80%;
-  font-size: 28px;
+  font-size: 24px;
+  font-weight: 200;
   text-align: center;
 }
 @media (max-width: 480px) {

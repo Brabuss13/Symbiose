@@ -20,12 +20,12 @@ const CreateSpace = () => {
             </div>
             <div className="stucco-mortex-box2content">
               <div className="partie1sm partieallsm">
-                <img src='/media/stucetmortex/stuccoc.jpg' alt=''></img>
+                <img src='/media/fb/fdtjfj.jpg' alt=''></img>
                 <h3>{t("text42")}</h3>
                 <p>{t("text43")}</p>
               </div>
               <div className="partie2sm partieallsm">
-                <img src='/media/vberteee.png' alt=''></img>
+                <img src='/media/fb/fgyhjjyr.jpg' alt=''></img>
                 <h3>{t("text44")}</h3>
                 <p>{t("text45")}</p>
               </div>

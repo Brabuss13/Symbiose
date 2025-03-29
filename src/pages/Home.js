@@ -211,19 +211,25 @@ const Home = () => {
         <div data-aos="fade-up" className="home-companywork">
           <div className="home-companywork-img">
             <div className="gallery">
-              <img className="img-1" src="/media/rfggrgg.avif" alt=""></img>
+              <img className="img-1" src="/media/fb/ryfjryjry.jpg" alt=""></img>
               <img className="img-2" src="/media/imgColor/pigmentcolor3.png" alt=""></img>
-              <img className="img-3" src="/media/imgColor/trtrtrt.jpg" alt=""></img>
+              <img className="img-3" src="/media/fb/yfyjjj.jpg" alt=""></img>
               <img className="img-4" src="/media/projet/7.png" alt=""></img>
               <img className="img-5" src="/media/IMG_9358.JPG" alt=""></img>
               <img className="img-6" src="/media/imgColor/verttttt.jpg" alt=""></img>
-              <img className="img-7" src="/media/vberteee.png" alt=""></img>
+              <img className="img-7" src="/media/rfggrgg.avif" alt=""></img>
               <img className="img-8" src="/media/IMG_9356.jpg" alt=""></img>
               <img className="img-9" src="/media/imgColor/pigmentcolor.jpg" alt=""></img>
               <img className="img-10" src="/media/test/imageplusdsombre.jpg" alt=""></img>
               <img className="img-11" src="/media/projet/hotelZoologie/zz3.avif" alt=""></img>
               <img className="img-12" src="/media/imgColor/ftyjtyhytghjh.jpg" alt=""></img>
               <img className="img-13" src="/media/projet/8.png" alt=""></img>
+              <img className="img-14" src="/media/fb/fdtjfj.jpg" alt=""></img>
+              <img className="img-15" src="/media/fb/eyyeee.jpg" alt=""></img>
+              <img className="img-16" src="/media/fb/rrr-u.jpg" alt=""></img>
+              <img className="img-17" src="/media/fb/rrrr-jrr.jpg" alt=""></img>
+              <img className="img-18" src="/media/fb/rtuirruru.jpg" alt=""></img>
+              <img className="img-19" src="/media/fb/tjdhdt.jpg" alt=""></img>
             </div>
           </div>
         </div>

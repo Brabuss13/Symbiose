@@ -921,6 +921,9 @@ html, body {
 .img-17 { grid-column: span 2; grid-row: span 3; }
 .img-18 { grid-column: span 1; grid-row: span 3; }
 .img-19 { grid-column: span 1; grid-row: span 3; }
+.img-20 { grid-column: span 1; grid-row: span 3; }
+.img-21 { grid-column: span 1; grid-row: span 3; }
+.img-22 { grid-column: span 2; grid-row: span 3; }
 
 @media (max-width: 480px) {
   .img-1 { grid-column: span 1; grid-row: span 3; }
@@ -942,6 +945,9 @@ html, body {
   .img-17 { grid-column: span 1; grid-row: span 2; }
   .img-18 { grid-column: span 1; grid-row: span 2; }
   .img-19 { grid-column: span 1; grid-row: span 2; }
+  .img-20 { grid-column: span 1; grid-row: span 2; }
+  .img-21 { grid-column: span 1; grid-row: span 2; }
+  .img-22 { grid-column: span 1; grid-row: span 2; }
 }
 /*----------space---------*/
 .space20px {
@@ -1439,7 +1445,7 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.im1 {
+/* .im1 {
   background-image: url(../public/media/projet/hotelZoologie/zz1.avif);
 }
 .im2 {
@@ -1462,7 +1468,7 @@ html, body {
 }
 .im7 {
   background-image: url(../public/media/projet/hotelZoologie/zz4.avif);
-}
+} */
 /*---------creat-space----------*/
 .creat-space-class {
   display: flex;

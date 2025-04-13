@@ -9,13 +9,13 @@ const projects = [
     details: "Détails complets du projet 1, expliquant en profondeur ce qui a été fait.",
     images: "/media/projet/hotelZoologie/zz3.avif",
   },
-  // {
-  //   id: "2",
-  //   title: "Bientôt disponible",
-  //   description: "",
-  //   details: "Détails complets du projet 2, expliquant en profondeur ce qui a été fait.",
-  //   images: "/media/projet/7.png",
-  // },
+  {
+    id: "2",
+    title: "Sebasto",
+    description: "Paris France",
+    details: "Détails complets du projet 2, expliquant en profondeur ce qui a été fait.",
+    images: "/media/projet/sebasto/m18.jpg",
+  },
 ];
 
 const Projects = () => {

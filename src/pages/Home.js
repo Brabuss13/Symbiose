@@ -33,12 +33,12 @@ const Home = () => {
     const { t } = useTranslation();
     const titles = [
       t("Hôtel de la Zoologie"),
-      t("Bientôt disponible"),
+      t("Sebasto"),
       t("Bientôt disponible"),
     ];
     const texts = [
       t("Bordeaux France"),
-      t(""),
+      t("Paris France"),
       t(""),
     ];
 
@@ -230,6 +230,9 @@ const Home = () => {
               <img className="img-17" src="/media/fb/rrrr-jrr.jpg" alt=""></img>
               <img className="img-18" src="/media/fb/rtuirruru.jpg" alt=""></img>
               <img className="img-19" src="/media/fb/tjdhdt.jpg" alt=""></img>
+              <img className="img-20" src="/media/projet/sebasto/m5.jpg" alt=""></img>
+              <img className="img-21" src="/media/projet/sebasto/m9.jpg" alt=""></img>
+              <img className="img-22" src="/media/projet/sebasto/m10.jpg" alt=""></img>
             </div>
           </div>
         </div>

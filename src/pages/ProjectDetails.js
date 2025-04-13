@@ -25,7 +25,7 @@ const projects = [
       title: "Sebasto",
       description: "Description rapide du projet 2.",
       details: "Paris France",
-      images: ["/media/projet/sebasto/m18.jpg"],
+      images: ["/media/projet/sebasto/bio1.png"],
       descri: "text73",
       backgrounds: [
         "/media/projet/sebasto/m1.jpg",

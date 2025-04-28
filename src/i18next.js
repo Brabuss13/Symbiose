@@ -9,7 +9,7 @@ i18n
     resources: {
       fr: {
         translation: {
-          text1: "Sublimez votre intérieur",
+          text1: "Sublimer votre intérieur",
           text2: "fait partie de mon idéal de vie",
           text3: "Découvrir",
           text4: "Nos services",
